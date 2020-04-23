@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grid_background"
+    tools:context=".ActivityUserSettings">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#88000000"
+        android:padding="30dp"
+        android:text="KULLANICI AYARLARI"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/cl_motionless"
+        app:layout_constraintEnd_toEndOf="@+id/cl_motionless"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cl_motionless" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_motionless"
+        android:layout_width="300dp"
+        android:layout_height="600dp"
+        android:background="#54000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:text="Yaş"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/et_settings_yas"
+            app:layout_constraintStart_toStartOf="@+id/et_settings_yas" />
+
+        <EditText
+            android:id="@+id/et_settings_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/et_border"
+            android:ems="10"
+            android:hint="Kullanıcı Adı"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_settings_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/et_border"
+            android:ems="10"
+            android:hint="Boy"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_settings_username" />
+
+        <EditText
+            android:id="@+id/et_settings_kilo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/et_border"
+            android:ems="10"
+            android:hint="Kilo"
+            android:inputType="number"
+            android:padding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_settings_height" />
+
+        <EditText
+            android:id="@+id/et_settings_yas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/et_border"
+            android:ems="10"
+            android:hint="Yaş"
+            android:inputType="number"
+            android:padding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_settings_kilo" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:text="Kullanıcı Adı"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/et_settings_username"
+            app:layout_constraintStart_toStartOf="@+id/et_settings_username" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:text="Boy"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/et_settings_height"
+            app:layout_constraintStart_toStartOf="@+id/et_settings_height" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:text="Kilo"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/et_settings_kilo"
+            app:layout_constraintStart_toStartOf="@+id/et_settings_kilo" />
+
+        <Spinner
+            android:id="@+id/s_gender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/et_border"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/et_settings_yas"
+            app:layout_constraintStart_toStartOf="@+id/et_settings_yas"
+            app:layout_constraintTop_toBottomOf="@+id/et_settings_yas" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:text="Cinsiyet"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/s_gender"
+            app:layout_constraintStart_toStartOf="@+id/s_gender" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:text="Uygulama Modu"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/s_appmode"
+            app:layout_constraintStart_toStartOf="@+id/s_appmode" />
+
+        <Spinner
+            android:id="@+id/s_appmode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/et_border"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/et_settings_yas"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/et_settings_yas"
+            app:layout_constraintTop_toBottomOf="@+id/s_gender" />
+
+        <Button
+            android:id="@+id/btn_settings_save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Bilgileri Kaydet"
+            app:layout_constraintEnd_toEndOf="@+id/s_appmode"
+            app:layout_constraintStart_toStartOf="@+id/s_appmode"
+            app:layout_constraintTop_toBottomOf="@+id/s_appmode" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grid_background"
+    tools:context=".ActivityMainMenu">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ActivityListUsers">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/grid_background"
+            tools:context=".ActivityMainMenu">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_motionless"
+                android:layout_width="300dp"
+                android:layout_height="600dp"
+                android:background="#54000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tw_email"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/et_border"
+                    android:padding="20dp"
+                    android:text="E-Posta\nGönder"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lightsensor" />
+
+                <TextView
+                    android:id="@+id/tw_settings"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/et_border"
+                    android:padding="20dp"
+                    android:text="Kullanıcı\nAyarları"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/tw_list_users"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/et_border"
+                    android:padding="20dp"
+                    android:text="Kullanıcıları\nListele"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/tw_light"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/et_border"
+                    android:padding="20dp"
+                    android:text="Işık\nSensörü"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toTopOf="@+id/tw_settings"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tw_email" />
+
+                <TextView
+                    android:id="@+id/tw_ivme"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/et_border"
+                    android:padding="20dp"
+                    android:text="İvme\nÖlçer"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toTopOf="@+id/tw_list_users"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tw_email" />
+
+                <TextView
+                    android:id="@+id/lightsensor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="#88000000"
+                    android:padding="30dp"
+                    android:text="ANA MENÜ"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
